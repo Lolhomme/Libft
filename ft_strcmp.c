@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 14:04:42 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/05 11:36:04 by alaulom          ###   ########.fr       */
+/*   Created: 2014/11/05 10:49:54 by alaulom           #+#    #+#             */
+/*   Updated: 2014/11/05 10:57:33 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dst, const char *src)
+int	ft_strcmp(const char *s1, const char *s2)
 {
 	int	a;
 
 	a = 0;
-	while (src[a])
+	while (s1[a])
 	{
-		dest[a] = src[a];
+		if (s1[a] != s2[a])
+			return (s1[a] - s2[a]);
 		a++;
 	}
-	dst[a] = 0;
-	return (dest);
+	return (0);
 }

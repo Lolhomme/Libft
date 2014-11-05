@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 10:49:54 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/05 12:55:13 by alaulom          ###   ########.fr       */
+/*   Created: 2014/11/05 13:16:59 by alaulom           #+#    #+#             */
+/*   Updated: 2014/11/05 13:22:03 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(const char *s1, const char *s2)
-{
-	int	a;
+#include "libft.h"
 
-	a = 0;
-	while (s1[a])
+char	ft_strcat(char *s1, const char *s2)
+{
+	char	*s;
+
+	while (*s)
+		s++;
+
+	while (*s2)
 	{
-		if (s1[a] != s2[a])
-			return (s1[a] - s2[a]);
-		a++;
+		*s = *s2;
+		s++;
+		s2++:
 	}
-	return (0);
+	return (s1);
 }

@@ -15,5 +15,6 @@ char 		*ft_strrchr(const char *s, int c);
 char		*ft_strncat(char *s1, const char *s2, size_t n);
 size_t		ft_strlcat(char *dst, const char *src, size_t n);
 char		*ft_strstr(const char *str, const char *to_find);
+char		*ft_strnstr(const chsr *str, const char *to_find, size_t n);
 
 #endif

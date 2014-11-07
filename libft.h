@@ -4,6 +4,7 @@
 #include "libft.h"
 #include <string.h>
 
+void		ft_memset(void *b, int c, size_t len);
 size_t		ft_strlen(const char *s);
 char		*ft_strcpy(char *dst, const chr *src);
 char		*ft_strncpy(char *dst, char *src, size_t n);

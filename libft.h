@@ -35,5 +35,8 @@ int			ft_toupper(int c);
 int			ft_isupper(int c);
 int			ft_tolower(int c);
 void		ft_putchar(char c);
+void		ft_putstr(const char *s);
+
+
 
 #endif

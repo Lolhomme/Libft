@@ -36,11 +36,11 @@ int			ft_isupper(int c);
 int			ft_tolower(int c);
 void		ft_putchar(char c);
 void		ft_putstr(const char *s);
-void`		ft_putendl(const char *s);
+void		ft_putendl(const char *s);
 void		ft_putnbr(int nb);
 void		ft_putchar_fd(char c, int fd);
 void		ft_putstr_fd(const char *s, int fd);
 void		ft_putendl_fd(const char *s, int fd);
-
+void		ft_putnbr_fd(int nb, int fd);
 
 #endif

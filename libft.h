@@ -40,7 +40,7 @@ void`		ft_putendl(const char *s);
 void		ft_putnbr(int nb);
 void		ft_putchar_fd(char c, int fd);
 void		ft_putstr_fd(const char *s, int fd);
-
+void		ft_putendl_fd(const char *s, int fd);
 
 
 #endif

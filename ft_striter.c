@@ -6,11 +6,9 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/11 15:53:26 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/11 16:16:42 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/11 16:27:12 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void		ft_striter(char *s, void (*f)(char *))
 {

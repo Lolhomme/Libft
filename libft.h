@@ -42,6 +42,7 @@ void		ft_strdel(char **as);
 void		ft_strclr(char *s);
 void		ft_striter(char *s, void (*f)(char *));
 void		ft_striteri(char *s, void (f*)(unsigned int, char *));
+char		*ft_strmap(const char *s, char (*f)(char));
 void		ft_putchar(char c);
 void		ft_putstr(const char *s);
 void		ft_putendl(const char *s);

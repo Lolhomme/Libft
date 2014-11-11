@@ -3,6 +3,7 @@
 
 #include "libft.h"
 #include <string.h>
+#include <stdlib.h>
 
 void		ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
@@ -40,7 +41,7 @@ char		*ft_strnew(size_t size);
 void		ft_strdel(char **as);
 void		ft_strclr(char *s);
 void		ft_striter(char *s, void (*f)(char *));
-
+void		ft_striteri(char *s, void (f*)(unsigned int, char *));
 void		ft_putchar(char c);
 void		ft_putstr(const char *s);
 void		ft_putendl(const char *s);

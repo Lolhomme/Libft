@@ -35,6 +35,8 @@ int			ft_toupper(int c);
 int			ft_isupper(int c);
 int			ft_tolower(int c);
 void		ft_memalloc(size_t size);
+void		ft_memdel(void **ap);
+
 void		ft_putchar(char c);
 void		ft_putstr(const char *s);
 void		ft_putendl(const char *s);

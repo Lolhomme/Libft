@@ -45,6 +45,7 @@ void		ft_striteri(char *s, void (f*)(unsigned int, char *));
 char		*ft_strmap(const char *s, char (*f)(char));
 char		*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 int			ft_strequ(const char *s1, const char *s2);
+int			ft_strnequ(const char *s1, const char *s2, size_t n);
 void		ft_putchar(char c);
 void		ft_putstr(const char *s);
 void		ft_putendl(const char *s);

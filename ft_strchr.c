@@ -6,7 +6,7 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 15:24:22 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/05 15:48:25 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/12 13:37:55 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strchr(const char *s, int c)
 {
 	while (*s != c)
 	{
-		if (!(s*))
+		if (!(*s))
 			return (NULL);
 		s++;
 	}

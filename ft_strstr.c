@@ -6,11 +6,11 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 14:15:44 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/07 14:32:01 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/12 13:41:56 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft"
+#include "libft.h"
 
 static int		scan(char *str, const char *to_find)
 {
@@ -20,16 +20,16 @@ static int		scan(char *str, const char *to_find)
 	while (to_find[i])
 	{
 		if (str[i] != to_find[i])
-			return(0);
+			return (0);
 		i++;
 	}
-	return(1);
+	return (1);
 }
 
-char		*ft_strstr(const char *str, const char *to_find)
+char			*ft_strstr(const char *str, const char *to_find)
 {
-	int		i;
-	char	*ptrstr;
+	int			i;
+	char		*ptrstr;
 
 	ptrstr = (char *)str;
 	if (!*to_find)
@@ -42,5 +42,5 @@ char		*ft_strstr(const char *str, const char *to_find)
 				return (&ptrstr[i]);
 		i++;
 	}
-	return (NULL)
+	return (NULL);
 }

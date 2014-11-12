@@ -6,13 +6,13 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 18:49:57 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/07 18:58:01 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/12 12:13:33 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_memcpy(void *dst, const void *src, size_t n)
+void						ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char			*ptrdst;
 	const unsigned char		*ptrsrc;

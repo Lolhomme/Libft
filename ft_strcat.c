@@ -6,7 +6,7 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:16:59 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/05 13:22:03 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/12 12:23:06 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ char	ft_strcat(char *s1, const char *s2)
 
 	while (*s)
 		s++;
-
 	while (*s2)
 	{
 		*s = *s2;
 		s++;
-		s2++:
+		s2++;
 	}
+	*s1 = "\0";
 	return (s1);
 }

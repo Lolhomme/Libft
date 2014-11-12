@@ -6,16 +6,16 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 11:36:23 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/08 11:56:10 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/12 12:15:03 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_memccpy(void *dst, const void *src, int c, size_t n)
+void					ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	unsigned char			*ptrdst;
-	const unsigned char 	*ptrsrc;
+	const unsigned char		*ptrsrc;
 	unsigned char			cara;
 
 	ptrdst = (unsigned char *)dst;
@@ -26,4 +26,3 @@ void		ft_memccpy(void *dst, const void *src, int c, size_t n)
 			return (ptrdst);
 	return (NULL);
 }
-

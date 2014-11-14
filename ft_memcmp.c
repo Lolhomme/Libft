@@ -6,9 +6,11 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/09 10:49:54 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/14 16:19:11 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/14 16:25:03 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int			ft_memcmp(const void *s1, const void *s2, size_t n)
 {

@@ -6,7 +6,7 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 15:28:32 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/08 17:22:15 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/14 16:48:25 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void		*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned			*ptrdst;
-	const unsigned		*ptrsrc;
+	unsigned char			*ptrdst;
+	const unsigned char		*ptrsrc;
 
 	if (!len)
 		return (dst);

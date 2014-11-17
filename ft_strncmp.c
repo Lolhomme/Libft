@@ -6,13 +6,13 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 15:51:07 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/07 15:54:10 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/17 11:01:41 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_strcmp(const char *s1, const char *s2, size_t n)
+int			ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	while (n--)
 	{

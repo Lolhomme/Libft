@@ -6,16 +6,17 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:16:59 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/12 12:23:06 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/17 11:12:11 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_strcat(char *s1, const char *s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
 	char	*s;
 
+	s = s1;
 	while (*s)
 		s++;
 	while (*s2)
@@ -24,6 +25,6 @@ char	ft_strcat(char *s1, const char *s2)
 		s++;
 		s2++;
 	}
-	*s1 = "\0";
+	*s1 = 0;
 	return (s1);
 }

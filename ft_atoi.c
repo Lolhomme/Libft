@@ -6,7 +6,7 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 11:46:01 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/10 12:11:01 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/17 11:04:48 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int			ft_atoi(const char *str)
 
 	sign = 1;
 	ret = 0;
-	while (ft_isspace (*str))
+	while (ft_isspace(*str))
 		str++;
 	if (*str == '-' || *str == '+')
 	{

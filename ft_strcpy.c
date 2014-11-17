@@ -6,7 +6,7 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:04:42 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/05 11:36:04 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/17 10:56:37 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ char	*ft_strcpy(char *dst, const char *src)
 	a = 0;
 	while (src[a])
 	{
-		dest[a] = src[a];
+		dst[a] = src[a];
 		a++;
 	}
 	dst[a] = 0;
-	return (dest);
+	return (dst);
 }

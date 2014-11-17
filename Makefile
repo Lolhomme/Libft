@@ -6,7 +6,7 @@
 #    By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/17 09:44:19 by alaulom           #+#    #+#              #
-#    Updated: 2014/11/17 16:27:45 by alaulom          ###   ########.fr        #
+#    Updated: 2014/11/17 18:10:56 by alaulom          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,32 +28,35 @@ OBJ		= $(SRC:.c=.o)
 CC		= gcc
 FLAGS	= -Wall -Wextra -Werror
 
-all		= $(NAME)
+all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+	@ar rc $(NAME) $(OBJ)
+	@ranlib $(NAME)
+	@echo "Libft compilee avec succes !"
 
 %.o: %.c
-	$(CC) -I . -o $@ -c $? $(FLAGS)
+	@$(CC) -I . -o $@ -c $? $(FLAGS)
 
 clean:
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
+
+re: fclean all
 
 testall: test1 test2
 
 test1: $(NAME) main1.c
-	gcc -I . main1.c libft.a
-	rm main1.c
-	./a.out
+	@gcc -I . main1.c libft.a
+	@rm main1.c
+	@./a.out
 
 test2: $(NAME) main2.c
-	gcc -I . main2.c libft.a
-	rm main2.c
-	./a.out
+	@gcc -I . main2.c libft.a
+	@rm main2.c
+	@./a.out
 
 main1.c:
 	curl -s http://pastebin.com/raw.php?i=p3BBP70K > main1.c
@@ -62,5 +65,3 @@ main2.c:
 	curl -s http://pastebin.com/raw.php\?i\=KQRs4L2H > main2.c
 
 .PHONY: all clean fclean re
-
-re:	fclean all

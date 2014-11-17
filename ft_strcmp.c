@@ -6,20 +6,23 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 10:49:54 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/05 12:55:13 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/17 18:48:00 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strcmp(const char *s1, const char *s2)
 {
-	int	a;
+	unsigned char	*us1;
+	unsigned char	*us2;
 
-	a = 0;
-	while (s1[a])
+	us1 = (unsigned char *)s1;
+	us2 = (unsigned char *)s2;
+	while (*us1)
 	{
-		if (s1[a] != s2[a])
-			return (s1[a] - s2[a]);
-		a++;
+		if (*us1 != *us2)
+			return (*us1 - *us2);
+		us1++;
+		us2++;
 	}
-	return (0);
+	return (*us1 - *us2);
 }

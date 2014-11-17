@@ -6,12 +6,15 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 11:16:32 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/10 11:17:50 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/17 14:33:49 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int			ft_tolower(int c)
 {
-	if (ft_isupper)
+	if (ft_isupper(c))
 		return (c - ('a' - 'A'));
+	return (c);
 }

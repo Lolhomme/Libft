@@ -6,7 +6,7 @@
 #    By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/17 09:44:19 by alaulom           #+#    #+#              #
-#    Updated: 2014/11/17 16:11:23 by alaulom          ###   ########.fr        #
+#    Updated: 2014/11/17 16:27:45 by alaulom          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,5 +60,7 @@ main1.c:
 
 main2.c:
 	curl -s http://pastebin.com/raw.php\?i\=KQRs4L2H > main2.c
+
+.PHONY: all clean fclean re
 
 re:	fclean all

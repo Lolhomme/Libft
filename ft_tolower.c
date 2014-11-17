@@ -6,7 +6,7 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 11:16:32 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/17 14:33:49 by alaulom          ###   ########.fr       */
+/*   Updated: 2014/11/17 17:13:06 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int			ft_tolower(int c)
 {
 	if (ft_isupper(c))
-		return (c - ('a' - 'A'));
+		return (c - ('A' - 'a'));
 	return (c);
 }

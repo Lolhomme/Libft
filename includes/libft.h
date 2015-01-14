@@ -6,7 +6,7 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/17 18:50:21 by alaulom           #+#    #+#             */
-/*   Updated: 2015/01/13 15:54:52 by alaulom          ###   ########.fr       */
+/*   Updated: 2015/01/14 18:09:37 by alaulom          ###   ########.fr       */
 /*   Updated: 2015/01/12 16:40:25 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -17,6 +17,13 @@
 # include "libft.h"
 # include <string.h>
 # include <stdlib.h>
+
+typedef	struct		s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}					t_list;
 
 int			get_next_line(int const fd, char **line);
 void		*ft_memset(void *b, int c, size_t len);
@@ -74,5 +81,11 @@ void		ft_putchar_fd(char c, int fd);
 void		ft_putstr_fd(const char *s, int fd);
 void		ft_putendl_fd(const char *s, int fd);
 void		ft_putnbr_fd(int nb, int fd);
+void		ft_lstadd(t_list **alst, t_list *new);
+void		ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+void		ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+void		ft_lstitter(t_list *lst, void (*f)(t_list *elem));
+t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+t_list		*ft_lstnew(void const *content, size_t content_size);
 
 #endif

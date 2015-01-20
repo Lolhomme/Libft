@@ -6,7 +6,7 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/17 18:50:21 by alaulom           #+#    #+#             */
-/*   Updated: 2015/01/14 18:09:37 by alaulom          ###   ########.fr       */
+/*   Updated: 2015/01/20 18:47:22 by alaulom          ###   ########.fr       */
 /*   Updated: 2015/01/12 16:40:25 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -25,6 +25,8 @@ typedef	struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+void		ft_putlist(t_list *list);
+void		ft_lstadd_back(t_list **alst, t_list *new);
 int			get_next_line(int const fd, char **line);
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);

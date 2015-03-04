@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
+/*   By: alaulom <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 12:58:21 by alaulom           #+#    #+#             */
-/*   Updated: 2015/01/11 17:25:55 by alaulom          ###   ########.fr       */
+/*   Created: 2015/01/21 17:48:22 by alaulom           #+#    #+#             */
+/*   Updated: 2015/02/04 16:14:56 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-size_t			ft_strlen(const char *s)
+int		ft_lstlen(t_list *list)
 {
-	size_t		a;
+	int		ret;
 
-	if (!s)
-		return (0);
-	a = 0;
-	while (s[a])
-		a++;
-	return (a);
+	ret = 0;
+	while (!(list == NULL))
+	{
+		list = list->next;
+		ret++;
+	}
+	return (ret);
 }

@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
+/*   By: dlevy <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 12:58:21 by alaulom           #+#    #+#             */
-/*   Updated: 2015/01/11 17:25:55 by alaulom          ###   ########.fr       */
+/*   Created: 2014/12/02 17:42:20 by dlevy             #+#    #+#             */
+/*   Updated: 2014/12/03 15:40:56 by dlevy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-size_t			ft_strlen(const char *s)
+void	ft_lstadd(t_list **alst, t_list *new)
 {
-	size_t		a;
-
-	if (!s)
-		return (0);
-	a = 0;
-	while (s[a])
-		a++;
-	return (a);
+	if (!new || !alst)
+		return ;
+	new->next = *alst;
+	*alst = new;
 }

@@ -6,7 +6,7 @@
 #    By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/17 09:44:19 by alaulom           #+#    #+#              #
-#    Updated: 2014/11/17 18:10:56 by alaulom          ###   ########.fr        #
+#    Updated: 2015/01/31 13:14:35 by alaulom          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,9 @@ SRC		= ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c \
 		  ft_strequ.c ft_strnequ.c ft_strsub.c ft_strjoin.c ft_strtrim.c \
 		  ft_strsplit.c ft_itoa.c ft_putchar.c ft_putstr.c ft_putendl.c \
 		  ft_putnbr.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl.c \
-		  ft_putnbr_fd.c ft_isspace.c
+		  ft_putnbr_fd.c ft_isspace.c ft_lstadd.c ft_lstdel.c ft_lstdelone.c \
+		  ft_lstiter.c ft_lstmap.c ft_lstnew.c ft_lstadd_back.c ft_putlist.c \
+		  get_next_line.c ft_lstlen.c
 
 OBJ		= $(SRC:.c=.o)
 CC		= gcc
@@ -36,7 +38,7 @@ $(NAME): $(OBJ)
 	@echo "Libft compilee avec succes !"
 
 %.o: %.c
-	@$(CC) -I . -o $@ -c $? $(FLAGS)
+	@$(CC) -I includes/ -o $@ -c $? $(FLAGS)
 
 clean:
 	@rm -f $(OBJ)

@@ -6,26 +6,28 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 15:23:48 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/04 16:56:00 by alaulom          ###   ########.fr       */
+/*   Updated: 2015/11/27 11:41:28 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
 #include <string.h>
 
 char	*ft_strncpy(char *dst, char *src, size_t n)
 {
+	size_t	l;
 	size_t	a;
 
+	l = ft_strlen(src);
 	a = 0;
-	while (a < n && src[a] != '\0')
+	while(n > 0)
+		if(l < n)
+			dest[a] = 0;
+	else
 	{
-		dst[a] = src[a];
+		dest[a] = src[a];
 		a++;
-	}
-	while (a < n)
-	{
-		dst[a] = '\0';
-		a++;
+		n--;
 	}
 	return (dst);
 }

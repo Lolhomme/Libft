@@ -6,7 +6,7 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 10:49:54 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/17 18:48:00 by alaulom          ###   ########.fr       */
+/*   Updated: 2015/12/14 15:17:21 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ int	ft_strcmp(const char *s1, const char *s2)
 		us1++;
 		us2++;
 	}
-	return (*us1 - *us2);
+	return (0);
 }

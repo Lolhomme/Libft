@@ -6,7 +6,7 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 15:23:48 by alaulom           #+#    #+#             */
-/*   Updated: 2015/11/27 11:49:02 by alaulom          ###   ########.fr       */
+/*   Updated: 2016/01/28 13:56:42 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ char	*ft_strncpy(char *dst, char *src, size_t n)
 	a = 0;
 	while (n > 0)
 		if (l < n)
-			dest[a] = 0;
+			dst[a] = 0;
 		else
 		{
-			dest[a] = src[a];
+			dst[a] = src[a];
 			a++;
 			n--;
 		}

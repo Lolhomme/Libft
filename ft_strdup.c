@@ -6,7 +6,7 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 14:23:20 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/05 14:31:29 by alaulom          ###   ########.fr       */
+/*   Updated: 2016/02/20 15:11:12 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,8 @@
 char	*ft_strdup(const char *s1)
 {
 	char	*dst;
-	size_t	l;
 
-	l = ft_strlen(s1);
-	dst = (char *)malloc(sizeof(char) * l + sizeof(char));
+	dst = (char *)malloc(ft_strlen(s1) *sizeof(char) + sizeof(char));
 	if (!dst)
 		return (NULL);
 	return (ft_strcpy(dst, s1));

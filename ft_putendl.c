@@ -6,7 +6,7 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 15:06:54 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/10 15:13:43 by alaulom          ###   ########.fr       */
+/*   Updated: 2016/02/23 15:01:35 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 void		ft_putendl(const char *s)
 {
 	while (*s)
-		write (1, s++, 1);
-	write (1, "\n", 1);
+		write(1, s++, 1);
+	write(1, "\n", 1);
 }

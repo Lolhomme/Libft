@@ -6,7 +6,7 @@
 /*   By: alaulom <anthonylaulom@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 14:56:11 by alaulom           #+#    #+#             */
-/*   Updated: 2014/11/10 15:01:41 by alaulom          ###   ########.fr       */
+/*   Updated: 2016/02/23 14:59:40 by alaulom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void		ft_putstr(const char *s)
 {
 	while (*s)
-		write (1, s++, 1);
+		write(1, s++, 1);
 }
